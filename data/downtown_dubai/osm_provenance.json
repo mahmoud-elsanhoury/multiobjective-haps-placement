@@ -1,0 +1,22 @@
+{
+  "roi_id": "downtown_dubai",
+  "city": "Downtown Dubai, United Arab Emirates",
+  "bbox_lat_min_lon_min_lat_max_lon_max": [
+    25.188192055587,
+    55.26494779344608,
+    25.20620793344311,
+    55.28385220655392
+  ],
+  "request_utc": "2026-10-13T16:46:05+00:00",
+  "osmnx_version": "2.1.1",
+  "n_polygon_buildings": 864,
+  "sha256": "1487e0ebb567ac5e9ee4ec1363b095fdd25ef858c7650d74f9467459451e1f76",
+  "file": "inputs/downtown_dubai/footprints.gpkg",
+  "height_rule": "height/building:height; else building:levels*3m; else exclude",
+  "n_buildings": 864,
+  "n_imputed": 38,
+  "imputation_rate": 0.04398148148148148,
+  "n_no_height": 648,
+  "height_min_m": 3.0,
+  "height_max_m": 489.0
+}

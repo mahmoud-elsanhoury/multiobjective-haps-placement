@@ -1,0 +1,4 @@
+roi_id,algorithm,seed,placement_id,design_f1,design_f2,test_R,test_conditional_median_PEB95_m,test_PEB95_p95_m,n_gnss_unsolved_test,n_made_solvable_test,selection_rule
+shinjuku_tokyo,preserved_c4_reference,deterministic,c4_300m_24h_phase,0.20638046474990154,,0.23090086786456424,,,8181,1889,reference
+downtown_dubai,preserved_c4_reference,deterministic,c4_300m_24h_phase,0.09294808624699437,,0.08653944280028575,,,9799,848,reference
+frankfurt_bankenviertel,preserved_c4_reference,deterministic,c4_300m_24h_phase,0.10525551684088269,,0.09683496608892238,,,7962,771,reference

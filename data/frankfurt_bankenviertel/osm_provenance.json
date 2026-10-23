@@ -1,0 +1,22 @@
+{
+  "roi_id": "frankfurt_bankenviertel",
+  "city": "Bankenviertel, Frankfurt am Main, Germany",
+  "bbox_lat_min_lon_min_lat_max_lon_max": [
+    50.10399870172626,
+    8.657294391118183,
+    50.120001287188046,
+    8.686705608881818
+  ],
+  "request_utc": "2026-10-13T16:46:12+00:00",
+  "osmnx_version": "2.1.1",
+  "n_polygon_buildings": 3743,
+  "sha256": "9e0fcfa811a67573cafc739c04747dfed76c65167203ba7f37b1c06db6241754",
+  "file": "inputs/frankfurt_bankenviertel/footprints.gpkg",
+  "height_rule": "height/building:height; else building:levels*3m; else exclude",
+  "n_buildings": 3743,
+  "n_imputed": 1432,
+  "imputation_rate": 0.3825808175260486,
+  "n_no_height": 2273,
+  "height_min_m": 3.0,
+  "height_max_m": 259.0
+}

@@ -1,0 +1,22 @@
+{
+  "roi_id": "shinjuku_tokyo",
+  "city": "Shinjuku, Tokyo, Japan",
+  "bbox_lat_min_lon_min_lat_max_lon_max": [
+    35.68379144072536,
+    139.69172887171877,
+    35.703808542599006,
+    139.7150711282812
+  ],
+  "request_utc": "2026-10-13T16:45:01+00:00",
+  "osmnx_version": "2.1.1",
+  "n_polygon_buildings": 10592,
+  "sha256": "233e9283de4a3d5e2ade1a368209ce518ab456bff415ec1ac3b2c137601f4b38",
+  "file": "inputs/shinjuku_tokyo/footprints.gpkg",
+  "height_rule": "height/building:height; else building:levels*3m; else exclude",
+  "n_buildings": 10592,
+  "n_imputed": 489,
+  "imputation_rate": 0.04616691842900302,
+  "n_no_height": 9132,
+  "height_min_m": 0.2,
+  "height_max_m": 225.0
+}

@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated ACDSA 2027 paper."
+title: "Multi-Objective HAPS Placement for Improved GNSS Positioning in Dense Urban Environments"
+type: software
+authors:
+  - family-names: Asif
+    given-names: Hafiz M.
+  - family-names: Elsanhoury
+    given-names: Mahmoud
+    orcid: "https://orcid.org/0000-0002-9195-4613"
+  - family-names: Tarhuni
+    given-names: Naser
+  - family-names: Iqbal
+    given-names: Waseem
+version: "1.0.0"
+
+preferred-citation:
+
+  type: conference-paper
+
+  title: "Multi-Objective HAPS Placement for Improved GNSS Positioning in Dense Urban Environments"
+
+  authors:
+
+    - family-names: Asif
+
+      given-names: Hafiz M.
+
+    - family-names: Elsanhoury
+
+      given-names: Mahmoud
+
+      orcid: "https://orcid.org/0000-0002-9195-4613"
+
+    - family-names: Tarhuni
+
+      given-names: Naser
+
+    - family-names: Iqbal
+
+      given-names: Waseem
+
+  year: 2027

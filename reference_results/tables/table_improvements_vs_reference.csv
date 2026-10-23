@@ -1,0 +1,4 @@
+roi_id,city,reference_test_R_pct,design_selected_max_R_method,design_selected_max_R_test_R_pct,delta_R_percentage_points,reference_test_PEB95_m,design_selected_min_PEB_method,design_selected_min_PEB_test_PEB95_m,PEB_reduction_vs_reference_pct
+shinjuku_tokyo,Shinjuku,23.09008678645642,Center + three,23.21232123212321,0.12223444566678843,626.2374637871187,NSGA-II,54.29859684334736,91.32939180690641
+downtown_dubai,Dubai,8.65394428002857,Center + three,8.73558526380242,0.08164098377384937,508.5490507924961,NSGA-II,62.8475059768543,87.64180055416169
+frankfurt_bankenviertel,Frankfurt,9.683496608892229,Center + three,9.69605626726953,0.012559658377300775,695.4838281975381,NSGA-II,43.63722233732773,93.72563091072571

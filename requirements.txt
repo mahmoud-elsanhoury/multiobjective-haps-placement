@@ -1,0 +1,21 @@
+# Scientific environment used by the experiment
+embreex==4.4.0
+geopandas==1.1.4
+georinex==1.16.2
+mapbox_earcut==2.0.0
+numpy==2.2.6
+osmnx==2.1.1
+pandas==2.2.3
+pymap3d==3.2.0
+pymoo==0.5.0
+requests==2.34.2
+scipy==1.17.1
+skyfield==1.55
+trimesh==5.0.0
+xarray==2025.4.0
+
+# Notebook execution / publication outputs
+nbformat==5.11.1
+nbclient==0.11.0
+matplotlib
+ipykernel

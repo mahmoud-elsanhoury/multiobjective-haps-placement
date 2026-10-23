@@ -1,0 +1,74 @@
+{
+  "experiment_id": "ACDSA27_CAMERA_READY_3CITY",
+  "protocol_version": "ACDSA27_CAMERA_READY_V2_20261009",
+  "created_utc": "2026-10-13T16:38:33+00:00",
+  "source": "OpenStreetMap via OSMnx/Overpass",
+  "cities": {
+    "shinjuku_tokyo": {
+      "roi_id": "shinjuku_tokyo",
+      "city": "Shinjuku, Tokyo, Japan",
+      "bbox_lat_min_lon_min_lat_max_lon_max": [
+        35.68379144072536,
+        139.69172887171877,
+        35.703808542599006,
+        139.7150711282812
+      ],
+      "request_utc": "2026-10-13T16:45:01+00:00",
+      "osmnx_version": "2.1.1",
+      "n_polygon_buildings": 10592,
+      "sha256": "233e9283de4a3d5e2ade1a368209ce518ab456bff415ec1ac3b2c137601f4b38",
+      "file": "inputs/shinjuku_tokyo/footprints.gpkg",
+      "height_rule": "height/building:height; else building:levels*3m; else exclude",
+      "n_buildings": 10592,
+      "n_imputed": 489,
+      "imputation_rate": 0.04616691842900302,
+      "n_no_height": 9132,
+      "height_min_m": 0.2,
+      "height_max_m": 225.0
+    },
+    "downtown_dubai": {
+      "roi_id": "downtown_dubai",
+      "city": "Downtown Dubai, United Arab Emirates",
+      "bbox_lat_min_lon_min_lat_max_lon_max": [
+        25.188192055587,
+        55.26494779344608,
+        25.20620793344311,
+        55.28385220655392
+      ],
+      "request_utc": "2026-10-13T16:46:05+00:00",
+      "osmnx_version": "2.1.1",
+      "n_polygon_buildings": 864,
+      "sha256": "1487e0ebb567ac5e9ee4ec1363b095fdd25ef858c7650d74f9467459451e1f76",
+      "file": "inputs/downtown_dubai/footprints.gpkg",
+      "height_rule": "height/building:height; else building:levels*3m; else exclude",
+      "n_buildings": 864,
+      "n_imputed": 38,
+      "imputation_rate": 0.04398148148148148,
+      "n_no_height": 648,
+      "height_min_m": 3.0,
+      "height_max_m": 489.0
+    },
+    "frankfurt_bankenviertel": {
+      "roi_id": "frankfurt_bankenviertel",
+      "city": "Bankenviertel, Frankfurt am Main, Germany",
+      "bbox_lat_min_lon_min_lat_max_lon_max": [
+        50.10399870172626,
+        8.657294391118183,
+        50.120001287188046,
+        8.686705608881818
+      ],
+      "request_utc": "2026-10-13T16:46:12+00:00",
+      "osmnx_version": "2.1.1",
+      "n_polygon_buildings": 3743,
+      "sha256": "9e0fcfa811a67573cafc739c04747dfed76c65167203ba7f37b1c06db6241754",
+      "file": "inputs/frankfurt_bankenviertel/footprints.gpkg",
+      "height_rule": "height/building:height; else building:levels*3m; else exclude",
+      "n_buildings": 3743,
+      "n_imputed": 1432,
+      "imputation_rate": 0.3825808175260486,
+      "n_no_height": 2273,
+      "height_min_m": 3.0,
+      "height_max_m": 259.0
+    }
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "experiment_id": "HAPS_GNSS_PLACEMENT_ACDSA2027",
+  "description": "Reproducibility configuration for the ACDSA 2027 four-HAPS placement experiment in Shinjuku, Downtown Dubai, and Frankfurt.",
+  "rois": [
+    {
+      "id": "shinjuku_tokyo",
+      "city": "Shinjuku, Tokyo, Japan",
+      "bbox": [
+        35.68379144072536,
+        139.69172887171877,
+        35.703808542599006,
+        139.7150711282812
+      ],
+      "bbox_note": "lat_min, lon_min, lat_max, lon_max (WGS84)",
+      "center": [
+        35.6938,
+        139.7034
+      ]
+    },
+    {
+      "id": "downtown_dubai",
+      "city": "Downtown Dubai, United Arab Emirates",
+      "bbox": [
+        25.188192055587,
+        55.26494779344608,
+        25.20620793344311,
+        55.28385220655392
+      ],
+      "bbox_note": "lat_min, lon_min, lat_max, lon_max (WGS84)",
+      "center": [
+        25.1972,
+        55.2744
+      ]
+    },
+    {
+      "id": "frankfurt_bankenviertel",
+      "city": "Bankenviertel, Frankfurt am Main, Germany",
+      "bbox": [
+        50.10399870172626,
+        8.657294391118183,
+        50.120001287188046,
+        8.686705608881818
+      ],
+      "bbox_note": "lat_min, lon_min, lat_max, lon_max (WGS84)",
+      "center": [
+        50.112,
+        8.672
+      ]
+    }
+  ],
+  "grid": {
+    "receiver_spacing_m": 25.0,
+    "receiver_height_agl_m": 1.5
+  },
+  "raytracing": {
+    "engine": "embreex",
+    "max_rays_per_batch": 2000000
+  },
+  "skyplot": {
+    "elevation_mask_deg": 5.0,
+    "time_window_utc": [
+      "2026-08-30T11:00:00Z",
+      "2026-08-30T13:00:00Z"
+    ],
+    "time_step_s": 300,
+    "constellations": [
+      "GPS",
+      "Galileo"
+    ]
+  },
+  "epochs": {
+    "design_split": {
+      "utc": [
+        "2026-08-30T11:00:00Z",
+        "2026-08-30T12:25:00Z"
+      ]
+    },
+    "held_out_split": {
+      "utc": [
+        "2026-08-30T12:30:00Z",
+        "2026-08-30T13:00:00Z"
+      ]
+    }
+  },
+  "dop": {
+    "elevation_mask_deg": 5.0,
+    "weighting": "elevation"
+  },
+  "crlb": {
+    "sigma_ure_default_m": 5.0,
+    "sigma_ure_source": "rinex_ura_else_default",
+    "peb_confidence": 0.95,
+    "weight": "sin(el)^2/sigma^2",
+    "peb_definition": "sqrt(chi2.ppf(0.95,2)*lambda_max(horizontal covariance))"
+  },
+  "haps_overlay": {
+    "altitude_km": 20.0,
+    "quasi_stationary_drift": {
+      "model": "circular",
+      "radius_m": 300.0,
+      "period_h": 24.0
+    },
+    "pseudorange_sigma_m": {
+      "dense_urban": 5.0
+    }
+  },
+  "placement": {
+    "k_haps": 4,
+    "altitude_m": 20000.0,
+    "sigma_m": 5.0,
+    "angle_convention": "theta is a local planar polar angle measured from East: e=r*cos(theta), n=r*sin(theta); it is not the navigation LOS azimuth."
+  },
+  "algorithms": {
+    "fair_comparison": {
+      "n_eval_budget": 1000,
+      "seed_labels": [
+        "20260906_1",
+        "20260906_2",
+        "20260906_3",
+        "20260906_4",
+        "20260906_5"
+      ]
+    },
+    "de": {
+      "population": 100,
+      "generations_after_initial": 9,
+      "mutation": [
+        0.5,
+        1.0
+      ],
+      "recombination": 0.7,
+      "polish": false
+    },
+    "nsga2": {
+      "population": 100,
+      "sbx_prob": 0.9,
+      "sbx_eta": 15,
+      "pm_eta": 20,
+      "mutation_prob": "1/n_var"
+    }
+  },
+  "structured": {
+    "rotation_step_deg": 15.0,
+    "broad_n_radii": 21,
+    "stage_a_radii_m": {
+      "start": 0,
+      "stop": 12000,
+      "step": 1000
+    },
+    "stage_b_radii_m": {
+      "start": 0,
+      "stop": 2000,
+      "step": 250
+    },
+    "refine_rule": "For each city/family, run Stage A only when the broad DESIGN non-dominated set contains the smallest positive broad radius. Run Stage B only when the Stage-A DESIGN non-dominated set contains 1 km. Final structured DESIGN front is the non-dominated union of all evaluated broad/local candidates."
+  },
+  "input_hashes": {
+    "BRDC_normalized_GPS_GAL.rnx": "3f6037cf9972b46de9f9a1fd71d89a20e5313f107c52ada456fd20c1eeba5e16",
+    "sv_table.csv": "967c5cb752d1f5fe3b4c7a1f7a7fe7d56ff0622f488cb4bb5e237d1ea3152764"
+  },
+  "source_hashes": {
+    "src/haps_gnss/dop.py": "81c29d79f7a9bdd939a624169c026759e9afb2ac57c5090d2b53029f6927642c",
+    "src/haps_gnss/ephemeris.py": "4d00cf7950acb3d1d87dda2e83ec616d9bc9a2600a1b52b1299ad5402d2b6eec",
+    "src/haps_gnss/osm_geometry.py": "bc6cf50690890391245f12f21711937b0ff26b315524d9b888f5ba6b28dcbefd",
+    "src/haps_gnss/receiver_eval.py": "b83501a5f7ac904decca593113f958a68da8a9b77f0739ec2a62f5d2e4283039",
+    "src/haps_gnss/reference_layout.py": "d42c07f91073d14bc2f6e58c521b8a320fa8970f3c84c156294406cc4b388ccc"
+  },
+  "protocol_version": "HAPS_GNSS_PLACEMENT_ACDSA2027_V1",
+  "timing_model": {
+    "group_0": "GPS + synchronized/calibrated HAPS",
+    "group_1": "Galileo",
+    "state_rule": "One receiver clock for a single visible time group; two clock columns when both groups are visible (equivalent to receiver clock plus Galileo-GPS ISB).",
+    "haps_clock_assumption": "HAPS transmit the calibrated/common GPS-aligned time scale; no independent HAPS clock state is estimated."
+  },
+  "resume": {
+    "default_full_run_id": "reproduction_run",
+    "policy": "Resume only when the public configuration, verified source files, GNSS inputs, and urban inputs are unchanged.",
+    "placement_cache": "durable JSONL per city and split; a malformed crash-tail line is ignored",
+    "optimizer_resume": "completed stochastic seeds load directly; interrupted seeds deterministically replay with the same seed and persistent placement cache",
+    "design_freeze": "immutable once DESIGN_FREEZE.json exists and hashes verify",
+    "test_checkpoint": "one summary JSON and one detail CSV per frozen layout"
+  }
+}

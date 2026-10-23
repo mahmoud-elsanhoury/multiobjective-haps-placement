@@ -1,0 +1,4 @@
+roi_id,epsg,n_receivers,n_buildings,n_imputed,imputation_rate,n_no_height,height_min_m,height_max_m,n_excluded_no_height,n_excluded_geometry
+shinjuku_tokyo,32654,7568,10592,489,0.04616691842900302,9132,0.2,225.0,9132,0
+downtown_dubai,32640,6162,864,38,0.04398148148148148,648,3.0,489.0,648,0
+frankfurt_bankenviertel,32632,6035,3743,1432,0.3825808175260486,2273,3.0,259.0,2273,0

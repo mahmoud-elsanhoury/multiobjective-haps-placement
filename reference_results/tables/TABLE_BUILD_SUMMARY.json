@@ -1,0 +1,16 @@
+{
+  "run_root": "reference_results",
+  "report_source": "reference_results/publication_audit/camera_ready_reporting_table_with_peb_audit.csv",
+  "selection_basis": "DESIGN only",
+  "test_used_for_selection": false,
+  "n_main_rows": 27,
+  "n_global_winners": 6,
+  "files": [
+    "table_main_results_long.csv",
+    "table_main_results_wide.csv",
+    "table_global_winners_design_selected.csv",
+    "table_improvements_vs_reference.csv",
+    "table_seed_variability.csv",
+    "table_main_results.tex"
+  ]
+}

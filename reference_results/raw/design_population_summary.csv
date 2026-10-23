@@ -1,0 +1,4 @@
+roi_id,n_receiver_epochs,n_gnss_unsolved,fraction_gnss_unsolved
+shinjuku_tokyo,136224,20312,0.1491073525957247
+downtown_dubai,110916,25369,0.22872263695048506
+frankfurt_bankenviertel,108630,20664,0.19022369511184756

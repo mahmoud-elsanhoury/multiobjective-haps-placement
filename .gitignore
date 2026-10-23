@@ -1,0 +1,8 @@
+.venv/
+.runtime_compat/
+outputs/
+publication_outputs/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store

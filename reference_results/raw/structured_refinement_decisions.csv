@@ -1,0 +1,7 @@
+roi_id,family,broad_front_touched_smallest_positive_radius,stage_A_run,stage_B_run,n_final_front
+shinjuku_tokyo,symmetric_ring,True,True,True,27
+shinjuku_tokyo,center_plus_three,True,True,True,36
+downtown_dubai,symmetric_ring,True,True,True,36
+downtown_dubai,center_plus_three,True,True,True,22
+frankfurt_bankenviertel,symmetric_ring,True,True,True,18
+frankfurt_bankenviertel,center_plus_three,True,True,True,29

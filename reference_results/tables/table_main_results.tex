@@ -1,0 +1,21 @@
+\begin{table*}[t]
+\centering
+\caption{TEST performance of immutable DESIGN-selected HAPS representatives. $R$ is shown in percent and PEB$_{95,h}$ in metres.}
+\label{tab:camera_ready_results}
+\begin{tabular}{llrrrrrr}
+\hline
+Method & Representative & \multicolumn{2}{c}{Shinjuku} & \multicolumn{2}{c}{Dubai} & \multicolumn{2}{c}{Frankfurt} \\
+ & & $R$ (\%) & PEB & $R$ (\%) & PEB & $R$ (\%) & PEB \\
+\hline
+Reference & Reference & 23.09 & 626.2 & 8.65 & 508.5 & 9.68 & 695.5 \\
+Greedy & R solution & 15.65 & 56.2 & 6.82 & 53.3 & 7.28 & 55.9 \\
+DE & max R & 18.52 & 95.7 & 7.40 & 91.6 & 8.13 & 57.2 \\
+NSGA-II & max R & 22.14 & 159.3 & 8.56 & 158.5 & 9.04 & 212.5 \\
+NSGA-II & min PEB & 15.10 & 54.3 & 6.36 & 62.8 & 2.99 & 43.6 \\
+Symmetric ring & max R & 23.08 & 690.3 & 8.78 & 334.6 & 9.72 & 690.6 \\
+Symmetric ring & min PEB & 16.46 & 46.0 & 6.43 & 40.7 & 6.23 & 48.9 \\
+Center + three & max R & 23.21 & 797.8 & 8.74 & 382.9 & 9.70 & 797.5 \\
+Center + three & min PEB & 17.13 & 51.1 & 6.43 & 54.8 & 7.51 & 43.5 \\
+\hline
+\end{tabular}
+\end{table*}
